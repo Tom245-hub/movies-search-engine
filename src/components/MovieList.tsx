@@ -113,7 +113,7 @@ const MovieList = (props: any) => {
             </ResultList>
 
             {
-                props.result.Response === "True" && props.countMovies === 6
+                props.result.Response === "True" && props.countMovies === 6 && props.result.Search.length >= 6
                 && <Button onClick={() => props.setCountMovies(props.result.Search.length)}>More result</Button>
             }
 
